@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="30" id="KGk-i7-Jjw" customClass="TitleHeaderCell" customModule="Escorsenter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cyanPixel" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-bU-KBq">
+                        <rect key="frame" x="-10" y="0.0" width="320" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="QQi-Sh-MgR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viernes 20 Feb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jle-cI-LMG">
+                        <rect key="frame" x="29" y="5" width="262" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.36862745099999999" green="0.58823529409999997" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u8b-bU-KBq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-10" id="4cI-Rt-HCp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Jle-cI-LMG" secondAttribute="trailing" constant="21" id="HIf-QA-35o"/>
+                    <constraint firstItem="Jle-cI-LMG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="W5P-4d-ECt"/>
+                    <constraint firstItem="Jle-cI-LMG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="21" id="Y47-3a-v5C"/>
+                    <constraint firstAttribute="trailing" secondItem="u8b-bU-KBq" secondAttribute="trailing" constant="10" id="bw1-TW-aqA"/>
+                    <constraint firstItem="u8b-bU-KBq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="efb-yF-avu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cyanDateImage" destination="u8b-bU-KBq" id="0LK-ks-Vwf"/>
+                <outlet property="dateRolLabel" destination="Jle-cI-LMG" id="F4X-HO-SGY"/>
+            </connections>
+            <point key="canvasLocation" x="542" y="415"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cyanPixel" width="5" height="5"/>
+    </resources>
+</document>

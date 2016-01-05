@@ -1,0 +1,7 @@
+import "NotificationDTO.proto";
+
+message NotificationListDTO{
+	repeated NotificationDTO items = 1;
+	optional int32 PageNumber = 2;
+	optional int32 PageTotal = 3;
+}
